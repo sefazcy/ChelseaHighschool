@@ -11,6 +11,8 @@
         content="Chelsea High School; LGS, YKS, ortaokul ve lise öğrencilerine yönelik modern, planlı ve öğrenci odaklı özel ders ve eğitim desteği sunar." />
 
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="assets/icons/chelsea-logo-icon.png" />
+    <link rel="shortcut icon" href="assets/icons/chelsea-logo-icon.png" />
 </head>
 
 <body>
@@ -19,17 +21,22 @@
     <header class="site-header">
         <div class="container header-container">
             <a href="#" class="logo" aria-label="Chelsea High School ana sayfa">
-                <span class="logo-icon">C</span>
-                <span class="logo-text">Chelsea High School</span>
+                <span class="logo-icon">
+                    <img src="assets/icons/chelsea-logo-icon.png" alt="" />
+                </span>
             </a>
 
             <nav class="main-nav" aria-label="Ana menü">
-                <a href="#about">Hakkımızda</a>
-                <a href="#programs">Programlar</a>
-                <a href="#method">Ders Süreci</a>
-                <a href="#faq">SSS</a>
-                <a href="#contact" class="nav-button">İletişim</a>
+                <a href="#about" data-i18n="nav-about">Hakkımızda</a>
+                <a href="#programs" data-i18n="nav-programs">Programlar</a>
+                <a href="#method" data-i18n="nav-method">Ders Süreci</a>
+                <a href="#faq" data-i18n="nav-faq">SSS</a>
+                <a href="#contact" class="nav-button" data-i18n="nav-contact">İletişim</a>
             </nav>
+
+            <button class="language-toggle" id="langToggle" aria-label="Dili değiştir">
+                <span class="lang-short">EN</span>
+            </button>
         </div>
     </header>
 
@@ -38,35 +45,36 @@
         <section class="hero">
             <div class="container hero-container">
                 <div class="hero-content">
-                    <span class="hero-badge">LGS • YKS • Ortaokul • Lise</span>
+                    <span class="hero-badge" data-i18n="hero-badge">LGS • YKS • Ortaokul • Lise</span>
 
-                    <h1>Başarı tesadüf değil, doğru planın sonucudur.</h1>
+                    <h1 data-i18n="hero-title">Başarı tesadüf değil, doğru planın sonucudur.</h1>
 
-                    <p>
+                    <p data-i18n="hero-description">
                         Chelsea High School, öğrencilerin akademik hedeflerine ulaşması için
                         kişiye özel ders planı, düzenli takip ve güçlü iletişim modeli sunan
                         modern bir eğitim merkezidir.
                     </p>
 
                     <div class="hero-actions">
-                        <a href="#contact" class="btn btn-primary">Ücretsiz Ön Görüşme Al</a>
-                        <a href="#programs" class="btn btn-secondary">Programları İncele</a>
+                        <a href="#contact" class="btn btn-primary" data-i18n="btn-consultation">Ücretsiz Ön Görüşme
+                            Al</a>
+                        <a href="#programs" class="btn btn-secondary" data-i18n="btn-programs">Programları İncele</a>
                     </div>
 
                     <div class="hero-stats">
                         <div>
-                            <strong>120+</strong>
-                            <span>Öğrenci</span>
+                            <strong data-i18n="hero-stat-1-number">120+</strong>
+                            <span data-i18n="hero-stat-1-text">Öğrenci</span>
                         </div>
 
                         <div>
-                            <strong>8</strong>
-                            <span>Branş</span>
+                            <strong data-i18n="hero-stat-2-number">8</strong>
+                            <span data-i18n="hero-stat-2-text">Branş</span>
                         </div>
 
                         <div>
-                            <strong>%90</strong>
-                            <span>Memnuniyet</span>
+                            <strong data-i18n="hero-stat-3-number">%90</strong>
+                            <span data-i18n="hero-stat-3-text">Memnuniyet</span>
                         </div>
                     </div>
                 </div>
@@ -96,10 +104,10 @@
                 </div>
 
                 <div class="about-content">
-                    <span class="section-label">Neden Biz?</span>
-                    <h2>Öğrenciyi sadece derste değil, süreç boyunca takip ediyoruz.</h2>
+                    <span class="section-label" data-i18n="about-label">Neden Biz?</span>
+                    <h2 data-i18n="about-title">Öğrenciyi sadece derste değil, süreç boyunca takip ediyoruz.</h2>
 
-                    <p>
+                    <p data-i18n="about-description">
                         Chelsea High School’da amaç sadece konu anlatmak değildir. Öğrencinin seviyesini
                         anlamak, eksiklerini görmek, düzenli tekrar ve soru çözümüyle gelişimini takip etmek
                         temel yaklaşımımızdır.
@@ -107,18 +115,21 @@
 
                     <div class="feature-grid">
                         <article class="feature-card">
-                            <h3>Kişiye Özel Plan</h3>
-                            <p>Her öğrenci için hedefe, seviyeye ve zamana göre ayrı çalışma programı hazırlanır.</p>
+                            <h3 data-i18n="feature-1-title">Kişiye Özel Plan</h3>
+                            <p data-i18n="feature-1-desc">Her öğrenci için hedefe, seviyeye ve zamana göre ayrı çalışma
+                                programı hazırlanır.</p>
                         </article>
 
                         <article class="feature-card">
-                            <h3>Düzenli Takip</h3>
-                            <p>Ders sonrası ödev, tekrar ve soru çözüm süreci düzenli olarak kontrol edilir.</p>
+                            <h3 data-i18n="feature-2-title">Düzenli Takip</h3>
+                            <p data-i18n="feature-2-desc">Ders sonrası ödev, tekrar ve soru çözüm süreci düzenli olarak
+                                kontrol edilir.</p>
                         </article>
 
                         <article class="feature-card">
-                            <h3>Veli Bilgilendirme</h3>
-                            <p>Öğrencinin gelişimi hakkında velilere sade ve anlaşılır geri bildirim sağlanır.</p>
+                            <h3 data-i18n="feature-3-title">Veli Bilgilendirme</h3>
+                            <p data-i18n="feature-3-desc">Öğrencinin gelişimi hakkında velilere sade ve anlaşılır geri
+                                bildirim sağlanır.</p>
                         </article>
                     </div>
                 </div>
@@ -128,9 +139,9 @@
         <!-- Programs -->
         <section id="programs" class="section programs-section">
             <div class="container section-header">
-                <span class="section-label">Programlar</span>
-                <h2>Farklı seviyelere uygun eğitim seçenekleri</h2>
-                <p>
+                <span class="section-label" data-i18n="programs-label">Programlar</span>
+                <h2 data-i18n="programs-title">Farklı seviyelere uygun eğitim seçenekleri</h2>
+                <p data-i18n="programs-description">
                     Ortaokuldan lise son sınıfa kadar öğrencilerin ihtiyaçlarına göre planlanan
                     ders ve sınav hazırlık programları.
                 </p>
@@ -138,9 +149,10 @@
 
             <div class="container programs-feature">
                 <div class="programs-feature-content">
-                    <span>Sınav Hazırlık</span>
-                    <h3>LGS ve YKS sürecinde planlı, takipli ve hedef odaklı ilerleme</h3>
-                    <p>
+                    <span data-i18n="programs-feature-label">Sınav Hazırlık</span>
+                    <h3 data-i18n="programs-feature-title">LGS ve YKS sürecinde planlı, takipli ve hedef odaklı ilerleme
+                    </h3>
+                    <p data-i18n="programs-feature-desc">
                         Öğrencilerin sadece konu öğrenmesini değil, sınav stratejisi geliştirmesini,
                         zaman yönetimi kazanmasını ve düzenli deneme analizi yapmasını önemsiyoruz.
                     </p>
@@ -154,27 +166,31 @@
 
             <div class="container program-grid">
                 <article class="program-card">
-                    <span>LGS</span>
-                    <h3>LGS Hazırlık</h3>
-                    <p>Matematik, Fen, Türkçe ve İngilizce derslerinde sınav odaklı hazırlık.</p>
+                    <span data-i18n="program-1-label">LGS</span>
+                    <h3 data-i18n="program-1-title">LGS Hazırlık</h3>
+                    <p data-i18n="program-1-desc">Matematik, Fen, Türkçe ve İngilizce derslerinde sınav odaklı hazırlık.
+                    </p>
                 </article>
 
                 <article class="program-card">
-                    <span>YKS</span>
-                    <h3>TYT - AYT Hazırlık</h3>
-                    <p>Üniversite hedeflerine göre konu anlatımı, deneme analizi ve net takibi.</p>
+                    <span data-i18n="program-2-label">YKS</span>
+                    <h3 data-i18n="program-2-title">TYT - AYT Hazırlık</h3>
+                    <p data-i18n="program-2-desc">Üniversite hedeflerine göre konu anlatımı, deneme analizi ve net
+                        takibi.</p>
                 </article>
 
                 <article class="program-card">
-                    <span>Okul Destek</span>
-                    <h3>Ortaokul ve Lise</h3>
-                    <p>Okul derslerine destek, yazılı hazırlığı ve eksik konu tamamlama çalışmaları.</p>
+                    <span data-i18n="program-3-label">Okul Destek</span>
+                    <h3 data-i18n="program-3-title">Ortaokul ve Lise</h3>
+                    <p data-i18n="program-3-desc">Okul derslerine destek, yazılı hazırlığı ve eksik konu tamamlama
+                        çalışmaları.</p>
                 </article>
 
                 <article class="program-card">
-                    <span>Online</span>
-                    <h3>Online Özel Ders</h3>
-                    <p>Uzaktan eğitimle düzenli, planlı ve etkileşimli birebir ders imkanı.</p>
+                    <span data-i18n="program-4-label">Online</span>
+                    <h3 data-i18n="program-4-title">Online Özel Ders</h3>
+                    <p data-i18n="program-4-desc">Uzaktan eğitimle düzenli, planlı ve etkileşimli birebir ders imkanı.
+                    </p>
                 </article>
             </div>
         </section>
@@ -182,33 +198,33 @@
         <!-- Method -->
         <section id="method" class="section method-section">
             <div class="container section-header">
-                <span class="section-label">Ders Süreci</span>
-                <h2>Başarıyı sistemli hale getiren 4 adım</h2>
+                <span class="section-label" data-i18n="method-label">Ders Süreci</span>
+                <h2 data-i18n="method-title">Başarıyı sistemli hale getiren 4 adım</h2>
             </div>
 
             <div class="container method-steps">
                 <div class="step-card">
                     <span>01</span>
-                    <h3>Seviye Analizi</h3>
-                    <p>Öğrencinin mevcut durumu ve temel eksikleri belirlenir.</p>
+                    <h3 data-i18n="step-1-title">Seviye Analizi</h3>
+                    <p data-i18n="step-1-desc">Öğrencinin mevcut durumu ve temel eksikleri belirlenir.</p>
                 </div>
 
                 <div class="step-card">
                     <span>02</span>
-                    <h3>Kişisel Plan</h3>
-                    <p>Hedefe göre haftalık ders ve çalışma programı hazırlanır.</p>
+                    <h3 data-i18n="step-2-title">Kişisel Plan</h3>
+                    <p data-i18n="step-2-desc">Hedefe göre haftalık ders ve çalışma programı hazırlanır.</p>
                 </div>
 
                 <div class="step-card">
                     <span>03</span>
-                    <h3>Ders ve Uygulama</h3>
-                    <p>Konu anlatımı, örnek çözüm ve öğrenciyle aktif soru çözümü yapılır.</p>
+                    <h3 data-i18n="step-3-title">Ders ve Uygulama</h3>
+                    <p data-i18n="step-3-desc">Konu anlatımı, örnek çözüm ve öğrenciyle aktif soru çözümü yapılır.</p>
                 </div>
 
                 <div class="step-card">
                     <span>04</span>
-                    <h3>Takip ve Geri Bildirim</h3>
-                    <p>Ödevler, denemeler ve gelişim süreci düzenli olarak takip edilir.</p>
+                    <h3 data-i18n="step-4-title">Takip ve Geri Bildirim</h3>
+                    <p data-i18n="step-4-desc">Ödevler, denemeler ve gelişim süreci düzenli olarak takip edilir.</p>
                 </div>
             </div>
         </section>
@@ -217,15 +233,15 @@
         <section class="section online-section">
             <div class="container online-container">
                 <div class="online-content">
-                    <span class="section-label">Online Eğitim</span>
-                    <h2>İster yüz yüze, ister online; süreç aynı ciddiyetle ilerler.</h2>
-                    <p>
+                    <span class="section-label" data-i18n="online-label">Online Eğitim</span>
+                    <h2 data-i18n="online-title">İster yüz yüze, ister online; süreç aynı ciddiyetle ilerler.</h2>
+                    <p data-i18n="online-description">
                         Online derslerde de öğrencinin aktif katılımı, düzenli ödev takibi ve haftalık gelişim
                         kontrolü korunur. Amaç sadece ekran başında ders yapmak değil, sürdürülebilir bir öğrenme
-                        düzeni oluşturmaktır.
+                        düzeni oluşturmaktadır.
                     </p>
 
-                    <a href="#contact" class="btn btn-primary">Online Ders Bilgisi Al</a>
+                    <a href="#contact" class="btn btn-primary" data-i18n="btn-online-info">Online Ders Bilgisi Al</a>
                 </div>
 
                 <div class="online-image">
@@ -238,36 +254,36 @@
         <!-- Testimonials -->
         <section class="section testimonials-section">
             <div class="container section-header">
-                <span class="section-label">Yorumlar</span>
-                <h2>Öğrenci ve velilerden geri bildirimler</h2>
+                <span class="section-label" data-i18n="testimonials-label">Yorumlar</span>
+                <h2 data-i18n="testimonials-title">Öğrenci ve velilerden geri bildirimler</h2>
             </div>
 
             <div class="container testimonial-grid">
                 <article class="testimonial-card">
-                    <p>
-                        “Kızımın matematik kaygısı ciddi şekilde azaldı. Dersler düzenli ve takipli ilerlediği için
-                        süreci daha rahat yönetebildik.”
+                    <p data-i18n="testimonial-1-text">
+                        "Kızımın matematik kaygısı ciddi şekilde azaldı. Dersler düzenli ve takipli ilerlediği için
+                        süreci daha rahat yönetebildik."
                     </p>
-                    <strong>Ayşe K.</strong>
-                    <span>8. sınıf velisi</span>
+                    <strong data-i18n="testimonial-1-name">Ayşe K.</strong>
+                    <span data-i18n="testimonial-1-role">8. sınıf velisi</span>
                 </article>
 
                 <article class="testimonial-card">
-                    <p>
-                        “TYT matematikte nerede hata yaptığımı ilk defa bu kadar net gördüm. Deneme analizleri çok işe
-                        yaradı.”
+                    <p data-i18n="testimonial-2-text">
+                        "TYT matematikte nerede hata yaptığımı ilk defa bu kadar net gördüm. Deneme analizleri çok işe
+                        yaradı."
                     </p>
-                    <strong>Emir T.</strong>
-                    <span>12. sınıf öğrencisi</span>
+                    <strong data-i18n="testimonial-2-name">Emir T.</strong>
+                    <span data-i18n="testimonial-2-role">12. sınıf öğrencisi</span>
                 </article>
 
                 <article class="testimonial-card">
-                    <p>
-                        “Sadece ders anlatımı değil, çalışma düzeni kurma konusunda da destek aldık. Bu bizim için çok
-                        değerliydi.”
+                    <p data-i18n="testimonial-3-text">
+                        "Sadece ders anlatımı değil, çalışma düzeni kurma konusunda da destek aldık. Bu bizim için çok
+                        değerliydi."
                     </p>
-                    <strong>Murat D.</strong>
-                    <span>10. sınıf velisi</span>
+                    <strong data-i18n="testimonial-3-name">Murat D.</strong>
+                    <span data-i18n="testimonial-3-role">10. sınıf velisi</span>
                 </article>
             </div>
         </section>
@@ -275,31 +291,35 @@
         <!-- FAQ -->
         <section id="faq" class="section faq-section">
             <div class="container section-header">
-                <span class="section-label">Sık Sorulan Sorular</span>
-                <h2>Aklınıza takılabilecek sorular</h2>
+                <span class="section-label" data-i18n="faq-label">Sık Sorulan Sorular</span>
+                <h2 data-i18n="faq-title">Aklınıza takılabilecek sorular</h2>
             </div>
 
             <div class="container faq-list">
                 <details>
-                    <summary>Dersler online mı yüz yüze mi yapılıyor?</summary>
-                    <p>Dersler öğrencinin ihtiyacına göre online veya yüz yüze olarak planlanabilir.</p>
+                    <summary data-i18n="faq-1-question">Dersler online mı yüz yüze mi yapılıyor?</summary>
+                    <p data-i18n="faq-1-answer">Dersler öğrencinin ihtiyacına göre online veya yüz yüze olarak
+                        planlanabilir.</p>
                 </details>
 
                 <details>
-                    <summary>İlk görüşme ücretli mi?</summary>
-                    <p>Hayır. İlk ön görüşme ücretsizdir. Bu görüşmede öğrencinin hedefi ve ihtiyaçları değerlendirilir.
+                    <summary data-i18n="faq-2-question">İlk görüşme ücretli mi?</summary>
+                    <p data-i18n="faq-2-answer">Hayır. İlk ön görüşme ücretsizdir. Bu görüşmede öğrencinin hedefi ve
+                        ihtiyaçları değerlendirilir.
                     </p>
                 </details>
 
                 <details>
-                    <summary>Her öğrenci için aynı program mı uygulanıyor?</summary>
-                    <p>Hayır. Programlar öğrencinin seviyesine, hedefine ve haftalık çalışma düzenine göre hazırlanır.
+                    <summary data-i18n="faq-3-question">Her öğrenci için aynı program mı uygulanıyor?</summary>
+                    <p data-i18n="faq-3-answer">Hayır. Programlar öğrencinin seviyesine, hedefine ve haftalık çalışma
+                        düzenine göre hazırlanır.
                     </p>
                 </details>
 
                 <details>
-                    <summary>Veli bilgilendirmesi yapılıyor mu?</summary>
-                    <p>Evet. Öğrencinin gelişimi belirli aralıklarla veliye sade ve anlaşılır şekilde aktarılır.</p>
+                    <summary data-i18n="faq-4-question">Veli bilgilendirmesi yapılıyor mu?</summary>
+                    <p data-i18n="faq-4-answer">Evet. Öğrencinin gelişimi belirli aralıklarla veliye sade ve anlaşılır
+                        şekilde aktarılır.</p>
                 </details>
             </div>
         </section>
@@ -308,20 +328,20 @@
         <section id="contact" class="section contact-section">
             <div class="container contact-container">
                 <div>
-                    <span class="section-label">İletişim</span>
-                    <h2>Öğrenciniz için doğru planı birlikte oluşturalım.</h2>
-                    <p>
+                    <span class="section-label" data-i18n="contact-label">İletişim</span>
+                    <h2 data-i18n="contact-title">Öğrenciniz için doğru planı birlikte oluşturalım.</h2>
+                    <p data-i18n="contact-description">
                         Ücretsiz ön görüşme için bizimle iletişime geçin. Öğrencinin seviyesi,
                         hedefi ve ihtiyaçlarına göre en uygun eğitim planını konuşalım.
                     </p>
                 </div>
 
                 <form class="contact-form">
-                    <input type="text" placeholder="Ad Soyad" />
-                    <input type="tel" placeholder="Telefon" />
-                    <input type="email" placeholder="E-posta" />
-                    <textarea placeholder="Kısaca ihtiyacınızı yazın"></textarea>
-                    <button type="submit">Gönder</button>
+                    <input type="text" placeholder="Ad Soyad" data-i18n="form-name" />
+                    <input type="tel" placeholder="Telefon" data-i18n="form-phone" />
+                    <input type="email" placeholder="E-posta" data-i18n="form-email" />
+                    <textarea placeholder="Kısaca ihtiyacınızı yazın" data-i18n="form-message"></textarea>
+                    <button type="submit" data-i18n="form-submit">Gönder</button>
                 </form>
             </div>
         </section>
@@ -330,11 +350,12 @@
     <!-- Footer -->
     <footer class="site-footer">
         <div class="container footer-container">
-            <p>© 2026 Chelsea High School. Tüm hakları saklıdır.</p>
+            <p data-i18n="footer-text">© 2026 Chelsea High School. Tüm hakları saklıdır.</p>
             <a href="mailto:info@chelseahighschool.com">info@chelseahighschool.com</a>
         </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
